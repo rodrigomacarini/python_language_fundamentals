@@ -35,7 +35,7 @@ def saque(valor):
         numero_saques += 1
         print(f"Retire o valor de R${valor:.2f} da máquina.")
         extrato.append(f"-R$ {valor:.2f} foram sacados")
-    return saldo, extrato
+    return saldo, extrato, numero_saques
 
 def imprimir_extrato():
     global extrato
@@ -61,7 +61,7 @@ while True:
     elif opcao == "b":
         valor_saque = float(input("Valor a ser sacado: R$"))
         if valor_saque > 0.0:
-            saldo, extrato = saque(valor_saque)
+            saldo, extrato, numero_saques = saque(valor_saque)
         else:
             print("Apresente um valor válido.")
     elif opcao == "c":
