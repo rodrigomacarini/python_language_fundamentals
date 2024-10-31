@@ -8,11 +8,12 @@ def main():
 
     if operation == "-":
         result = subtraction.subtraction(float(value_a), float(value_b))
+        print(result)
         return result
     
     if operation == "+":
-        result = sum.sum15(float(value_a), float(value_b))
+        result = sum.sum(float(value_a), float(value_b))
+        print(result)
         return result
 if __name__ == "__main__":
     main()
-    

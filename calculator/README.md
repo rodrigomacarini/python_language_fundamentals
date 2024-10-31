@@ -1,44 +1,41 @@
+# calculator-rodrigom
 
----
+calculator-rodrigom é um pacote Python para operações aritméticas básicas. Siga as instruções abaixo para instalação e uso.
 
-# calculator
+## Instalação
 
-A simple Python package used to perform basic arithmetic operations.
+Instale o pacote via pip:
 
-## Installation
+bash
+pip install calculator-rodrigom
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install `calculator`:
 
-```bash
-pip install calculator
+## Uso
+
+Após instalar, você pode importar e utilizar as funções de soma e subtração da seguinte forma:
+
+```
+python import sum, subtraction
 ```
 
-## Usage
-
+# Exemplo de uso
 ```python
-from calculator import Calculator
+import sum, subtraction
 
-calc = Calculator()
-
-# Perform addition
-calc.add(5, 3)
-
-# Perform subtraction
-calc.subtract(5, 3)
-
-# Perform multiplication
-calc.multiply(5, 3)
-
-# Perform division
-calc.divide(10, 2)
+# Exemplo de uso
+resultado_subtracao = subtraction.subtraction(10, 4)
+print("Subtração:", resultado_subtracao)
+print("Soma: ", sum.sum(8, -10))
 ```
 
-## Author
 
-Rodrigo Macarini
+## Funções Disponíveis
 
-## License
+- sum.sum(a, b): Retorna a soma de a e b.
+- subtraction.subtraction(a, b): Retorna a diferença entre a e b.   
 
-[MIT](https://opensource.org/licenses/MIT)
+Author
+[Rodrigo Macarini](https://github.com/rodrigomacarini)
 
----
+License
+MIT
