@@ -6,9 +6,9 @@ calculator-rodrigom é um pacote Python para operações aritméticas básicas. 
 
 Instale o pacote via pip:
 
-bash
+```bash
 pip install calculator-rodrigom
-
+```
 
 ## Uso
 
